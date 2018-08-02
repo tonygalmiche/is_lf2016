@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report 
+            id="is_pos_session_reports"
+            model="pos.session"
+            string="Rapport LF 2016"
+            report_type="qweb-pdf"
+            name="is_lf2016.is_pos_session_report"
+            file="is_lf2016.is_pos_session_report"
+            attachment_use="True"
+            attachment="(object.name or '').replace('/','-')+'.pdf'"
+        />
+        <record id="is_pos_session_reports" model="ir.actions.report.xml">
+            <field name="paperformat_id" ref="is_lf2016.is_pos_session_paperformat"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Doc : http://odoo-80.readthedocs.org/en/latest/howtos/web.html#using-qweb -->
+
+
+<!-- Ce fichier est pris en compte à chaque rafraichissement du navigateur -->
+<templates>
+    <t t-name="HomePageTemplate">
+        <div class="lf2016">
+            <h2 style="font-size:1.5em;padding:0;margin:0">Loi de finances 2016</h2>
+            <div id="lf2016"/>
+        </div>
+    </t>
+</templates>
+

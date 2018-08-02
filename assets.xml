@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="is_assets_backend" name="is_lf2016 assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link    rel="stylesheet"      href="/is_lf2016/static/src/css/style.css"/>
+                <script type="text/javascript"  src="/is_lf2016/static/src/js/script.js"/>
+            </xpath>
+        </template>
+        <record id="is_lf2016_action" model="ir.actions.client">
+            <field name="name">Loi de finances 2016</field>
+            <field name="tag">is_lf2016.homepage</field>
+        </record>
+        <menuitem 
+            id="is_lf2016_menu" 
+            parent="point_of_sale.menu_point_root" 
+            action="is_lf2016_action" 
+            sequence="900"
+        />
+    </data>
+</odoo>
