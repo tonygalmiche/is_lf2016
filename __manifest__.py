@@ -11,6 +11,7 @@
     "init_xml" : [],
     "demo_xml" : [],
     "data" : [
+        "security/ir.model.access.csv",
         "assets.xml",
         "report/is_pos_session_report.xml",
         "report/report_paperformat.xml",
